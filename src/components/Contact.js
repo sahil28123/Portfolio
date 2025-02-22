@@ -35,7 +35,7 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // Allow the form to submit traditionally
     setFormData({
       name: "",
       mobile: "",
@@ -45,51 +45,51 @@ const Contact = () => {
 
   return (
     <section id="Contact">
-    <div className={`contact-container ${isVisible ? "fade-in" : ""}`}>
-      <h2>Message Me</h2>
-      <form
-        onSubmit={handleSubmit}
-        action="https://formsubmit.co/sahilverma455665@gmail.com"
-        method="POST"
-      >
-        <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-        </div>
+      <div className={`contact-container ${isVisible ? "fade-in" : ""}`}>
+        <h2>Message Me</h2>
+        <form
+          onSubmit={handleSubmit}
+          action="https://formsubmit.co/sahilverma455665@gmail.com"
+          method="POST"
+        >
+          <div className="form-group">
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-        <div className="form-group">
-          <label htmlFor="mobile">Mobile Number:</label>
-          <input
-            type="tel"
-            id="mobile"
-            name="mobile"
-            value={formData.mobile}
-            onChange={handleChange}
-            required
-          />
-        </div>
+          <div className="form-group">
+            <label htmlFor="mobile">Mobile Number:</label>
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              value={formData.mobile}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-        <div className="form-group">
-          <label htmlFor="query">Your Query:</label>
-          <textarea
-            id="query"
-            name="query"
-            value={formData.query}
-            onChange={handleChange}
-            required
-          />
-        </div>
+          <div className="form-group">
+            <label htmlFor="query">Your Query:</label>
+            <textarea
+              id="query"
+              name="query"
+              value={formData.query}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </section>
   );
 };
