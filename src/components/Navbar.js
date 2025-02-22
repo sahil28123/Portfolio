@@ -18,7 +18,6 @@ const Navbar = () => {
           <li><a href="#Skills" onClick={toggleMobileMenu}>Skills</a></li>
           <li><a href="#Projects" onClick={toggleMobileMenu}>Projects</a></li>
           <li><a href="#Timeline" onClick={toggleMobileMenu}>Timeline</a></li>
-          <li><a href="#Contact" onClick={toggleMobileMenu}>Contact</a></li>
         </ul>
         <div className="navbar-toggle" id="mobile-menu" onClick={toggleMobileMenu}>
           <span className="bar"></span>

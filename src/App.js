@@ -5,7 +5,6 @@ import Projects from './components/Projects';
 import Timeline from './components/Timeline';
 import AboutMe from './components/About';
 import SkillStack from './components/SkillStack';
-import Contact from './components/Contact';
 
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
         <SkillStack/>
         <Projects />
         <Timeline/>
-        <Contact/>
       </main>
       <Footer/>
     </div>
