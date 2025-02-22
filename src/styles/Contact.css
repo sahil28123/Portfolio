@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 40px 20px; /* Full padding */
+  background-color: black; /* Dark gray background */
+  opacity: 0; /* Start invisible for fade-in animation */
+  transition: opacity 1s ease-in-out;
+  border-radius: 12px;
+}
+
+.contact-container.fade-in {
+  opacity: 1; /* Fade in when visible */
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 28px;
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #8a2be2; /* Purple border on focus */
+  box-shadow: 0 0 8px rgba(138, 43, 226, 0.6);
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #8a2be2; /* Purple button */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7b1fa2; /* Darker purple on hover */
+}
